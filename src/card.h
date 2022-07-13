@@ -2,8 +2,10 @@
 
 #ifndef CARD_H
 #define CARD_H
+
+//class Enum? 
 class Card {
-    public:
+ public:
     enum Value{
 
         Two = 2,

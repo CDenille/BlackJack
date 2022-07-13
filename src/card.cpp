@@ -23,11 +23,10 @@ Card::Card(Value value, Suit suit) {
       } else {
         return 11;
       }
-}
-void Card::Print() 
-{
-    if (value <= Ten)
-    {
+    }
+    //make a switch statement - intergal type
+    void Card::Print() {
+    if (value <= Ten) {
         std::cout << value;
     }
     else if (value == Jack) {   
@@ -42,17 +41,30 @@ void Card::Print()
     else {
         std::cout << "A";
     }
-
-    if (suit == hearts) {
-        std::cout << "H";
+    switch (suit) {
+        case hearts:
+          std::cout << "H";
+          break;
+        case spades:
+          std::cout << "S";
+          break;
+        case diamonds:
+          std::cout << "D";
+          break;
+        case clubs:
+          std::cout << "C";
+          break;
     }
-    else if (suit == spades) {
-        std::cout << "S";
-    }
-    else if (suit == diamonds) {
-        std::cout << "D";
-    }
-    else {
-        std::cout << "C";
-    }
+    // if (suit == hearts) {
+    //     std::cout << "H";
+    // }
+    // else if (suit == spades) {
+    //     std::cout << "S";
+    // }
+    // else if (suit == diamonds) {
+    //     std::cout << "D";
+    // }
+    // else {
+    //     std::cout << "C";
+    // }
 };
