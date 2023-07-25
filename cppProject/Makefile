@@ -3,7 +3,7 @@
 ########################################################################
 
 # Compiler settings - Can be customized.
-CC = clang++
+CC = g++
 CXXFLAGS = -std=c++17 -Wall -Wc++11-extensions -Wdeprecated
 LDFLAGS = 
 
